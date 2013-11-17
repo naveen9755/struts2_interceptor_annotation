@@ -1,12 +1,13 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Guess the number</title>
   </head>
   <body>
     <h1> Ghici&#355;i num&#259;rul &#238;n 3 &#238;ncerc&#259;ri</h1>
-   <p/> 
+   <br/> 
      <s:if test="#session.incercari!=null">
         &#206;ncercarea <s:property value="#session.incercari"/>
      </s:if>     
@@ -16,7 +17,6 @@
     <p>
     <s:form action="guess">
       <s:textfield name="numar" label="Alegerea mea" />
-      <br/>
       <!--
       <s:if test="%{incercari > 0}">
 			  <s:hidden name="incercari" value="%{incercari}"></s:hidden>
@@ -24,7 +24,7 @@
       -->
       <s:submit value="Verifica numarul"/>  
     </s:form>   
-    <p/>
+    <br/>
     <s:if test="#session.incercari>1">
        Ghici&#355;i num&#259;rul (<s:property value="#session.guess"/>)
     </s:if>   

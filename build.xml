@@ -1,7 +1,7 @@
 <project basedir="." default="generate.war">
   <property name="dist.name" value="guess" />
   <property name="dist.dir" value="dist" />
-  <property name="TOMCAT_HOME" value="d:/JavaApp/apache-tomcat-7.0.47"/>  
+  <property name="TOMCAT_HOME" value="/home/alexbutum/Software/Java/apache-tomcat-8.0.0-RC5/"/>  
 
   <path id="myclasspath">
     <fileset dir="web/WEB-INF/lib">
